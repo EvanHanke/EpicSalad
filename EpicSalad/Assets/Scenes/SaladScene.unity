@@ -532,8 +532,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9339623, g: 0.7885814, b: 0.82350236, a: 1}
-  m_Intensity: 0.4
+  m_Color: {r: 0.93333334, g: 0.7882353, b: 0.81404823, a: 1}
+  m_Intensity: 1.02
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -654,9 +654,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Timer: 000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09f3690e8a9a8440eb0111f7daccc53c, type: 2}
-  m_sharedMaterial: {fileID: -2221153582875685774, guid: 09f3690e8a9a8440eb0111f7daccc53c,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -832,6 +831,9 @@ GameObject:
   m_Component:
   - component: {fileID: 775625916}
   - component: {fileID: 775625917}
+  - component: {fileID: 775625920}
+  - component: {fileID: 775625919}
+  - component: {fileID: 775625918}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -904,6 +906,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!136 &775625918
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775625915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.79099995
+  m_Height: 1.8720005
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.000000022906839, z: -0.00000011920929}
+--- !u!54 &775625919
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775625915}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &775625920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775625915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be715948f8af04c958086fc2e607c6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerA: 0
+  speed: 8
 --- !u!1 &782668121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2114,9 +2160,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: 000'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09f3690e8a9a8440eb0111f7daccc53c, type: 2}
-  m_sharedMaterial: {fileID: -2221153582875685774, guid: 09f3690e8a9a8440eb0111f7daccc53c,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2284,10 +2329,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Timer: 000'
+  m_text: Timer:000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09f3690e8a9a8440eb0111f7daccc53c, type: 2}
-  m_sharedMaterial: {fileID: -2221153582875685774, guid: 09f3690e8a9a8440eb0111f7daccc53c,
+  m_fontAsset: {fileID: 11400000, guid: 40e3afd8682b8457caa9316f6a2335c9, type: 2}
+  m_sharedMaterial: {fileID: -1409110671725898153, guid: 40e3afd8682b8457caa9316f6a2335c9,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2312,8 +2357,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 46.07
+  m_fontSizeBase: 46.07
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2547,6 +2592,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1666654027}
   - component: {fileID: 1666654028}
+  - component: {fileID: 1666654031}
+  - component: {fileID: 1666654030}
+  - component: {fileID: 1666654029}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Untagged
@@ -2619,6 +2667,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!136 &1666654029
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666654026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.73899996
+  m_Height: 1.5820003
+  m_Direction: 1
+  m_Center: {x: 0.00000011920929, y: -0.000000022906839, z: -0.00000011920929}
+--- !u!54 &1666654030
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666654026}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &1666654031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666654026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be715948f8af04c958086fc2e607c6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerA: 1
+  speed: 8
 --- !u!1 &1686390032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,10 +3026,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 000'
+  m_text: Score:000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 09f3690e8a9a8440eb0111f7daccc53c, type: 2}
-  m_sharedMaterial: {fileID: -2221153582875685774, guid: 09f3690e8a9a8440eb0111f7daccc53c,
+  m_fontAsset: {fileID: 11400000, guid: 40e3afd8682b8457caa9316f6a2335c9, type: 2}
+  m_sharedMaterial: {fileID: -1409110671725898153, guid: 40e3afd8682b8457caa9316f6a2335c9,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2962,8 +3054,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42
-  m_fontSizeBase: 42
+  m_fontSize: 46.07
+  m_fontSizeBase: 46.07
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
