@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: c4bc44cd589ee4021ba9a9ce76771db5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1553515082792473247
+    second: epicsaladsprites_0
+  - first:
+      213: -4962939654603541635
+    second: epicsaladsprites_1
+  - first:
+      213: 9136443096323193607
+    second: epicsaladsprites_2
+  - first:
+      213: -2522260832817289271
+    second: epicsaladsprites_3
+  - first:
+      213: 4569393759702649035
+    second: epicsaladsprites_4
+  - first:
+      213: -6596875043802892457
+    second: epicsaladsprites_5
+  - first:
+      213: -3069609680894295234
+    second: epicsaladsprites_6
+  - first:
+      213: -2029490694518649676
+    second: epicsaladsprites_7
+  - first:
+      213: -405388703617083356
+    second: epicsaladsprites_8
+  - first:
+      213: -7918646997830541986
+    second: epicsaladsprites_9
+  - first:
+      213: 8277534677365414033
+    second: epicsaladsprites_10
+  - first:
+      213: -683358176673300755
+    second: epicsaladsprites_11
+  - first:
+      213: 2955522863783028393
+    second: epicsaladsprites_12
+  - first:
+      213: -6015357981179972232
+    second: epicsaladsprites_13
+  - first:
+      213: 3856086811506606092
+    second: epicsaladsprites_14
+  - first:
+      213: 8372812658920250109
+    second: epicsaladsprites_15
+  - first:
+      213: 1210512613596905554
+    second: epicsaladsprites_16
+  - first:
+      213: 8311947521318536782
+    second: epicsaladsprites_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: epicsaladsprites_0
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 5090
+        width: 739
+        height: 791
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f929e07acb13f8510800000000000000
+      internalID: 1553515082792473247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_1
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 5133
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73f7adcda8102bb0800000000000000
+      internalID: -4962939654603541635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4818
+        width: 791
+        height: 936
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bf9e2d69a2bce70800000000000000
+      internalID: 9136443096323193607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_3
+      rect:
+        serializedVersion: 2
+        x: 2328
+        y: 5020
+        width: 770
+        height: 788
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c76b05d2212ffcd0800000000000000
+      internalID: -2522260832817289271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_4
+      rect:
+        serializedVersion: 2
+        x: 3453
+        y: 4762
+        width: 524
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc886fd2a6fb96f30800000000000000
+      internalID: 4569393759702649035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_5
+      rect:
+        serializedVersion: 2
+        x: 4235
+        y: 5067
+        width: 551
+        height: 829
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7573d7279113374a0800000000000000
+      internalID: -6596875043802892457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_6
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 3535
+        width: 774
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33023b324e8665d0800000000000000
+      internalID: -3069609680894295234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_7
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 4080
+        width: 586
+        height: 697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc414e47fcc5d3e0800000000000000
+      internalID: -2029490694518649676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_8
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 3667
+        width: 478
+        height: 899
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42892f43f15cf5af0800000000000000
+      internalID: -405388703617083356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_9
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 4012
+        width: 630
+        height: 838
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dd890a2805b1290800000000000000
+      internalID: -7918646997830541986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_10
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 2260
+        width: 774
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198d75ccee5bfd270800000000000000
+      internalID: 8277534677365414033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_11
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 2922
+        width: 772
+        height: 756
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee7701eb593486f0800000000000000
+      internalID: -683358176673300755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_12
+      rect:
+        serializedVersion: 2
+        x: 3749
+        y: 2434
+        width: 996
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a62555b260240920800000000000000
+      internalID: 2955522863783028393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_13
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 2380
+        width: 255
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 875f4fe69c7258ca0800000000000000
+      internalID: -6015357981179972232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_14
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1973
+        width: 852
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c008bee4682938530800000000000000
+      internalID: 3856086811506606092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_15
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 933
+        width: 1156
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfad5d190c4323470800000000000000
+      internalID: 8372812658920250109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_16
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 506
+        width: 1156
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250c299feca9cc010800000000000000
+      internalID: 1210512613596905554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: epicsaladsprites_17
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 895
+        width: 1157
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4641e76b38f95370800000000000000
+      internalID: 8311947521318536782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d8c3e2453bf164418812b0d56ef1b57d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
