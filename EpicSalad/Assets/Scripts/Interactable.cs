@@ -10,6 +10,19 @@ public class Interactable : MonoBehaviour
     public static List<Interactable> all_interactables;
     Vector3 base_scale;
 
+
+    public virtual void OnInteract(Player p) {
+
+    }
+
+    public virtual void OnInteractHeld(Player p) {
+        //for when the interact button is held i.e the cutting board
+    }
+    public virtual void OnInteractReleased(Player p) {
+        //for when the interact button is released i.e the cutting board
+    }
+
+
     //Method for returning the nearest valid interactable object to the given player
     //Used to decide what to interact with when interact button is pressed
     public static Interactable GetNearest(Player p) {
@@ -34,9 +47,7 @@ public class Interactable : MonoBehaviour
         all_interactables.Add(this);
         base_scale = transform.localScale;
     }
-    public virtual void OnInteract(Player p) {
 
-    }
 
     //simple animation when nearby
     public void Update() {

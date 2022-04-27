@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
         //movement controls
     public bool playerA;
-    Rigidbody myRB;
+    public Rigidbody myRB;
     public float speed = 8f;
 
         //the spriterenderers which correspond to the currently held items
@@ -19,14 +19,16 @@ public class Player : MonoBehaviour
         //objects which control the held item logic
     HeldItem held_a;
     HeldItem held_b;
+    public Salad held_salad;
 
         //the most valid interactable near me to use
     public Interactable nearest;
 
+        //if busy, cannot move
+    public bool busy = false;
 
 
     //instantiation / update loop
-
     private void Awake() {
         myRB = GetComponent<Rigidbody>();
 
@@ -37,8 +39,8 @@ public class Player : MonoBehaviour
     private void Update() {
 
             //read in keyboard movement input
-        Vector2 move = MyInput.GetMovementVector(playerA); 
-        myRB.velocity = new Vector3(move.x, 0f, move.y) * speed;
+        Vector2 move = MyInput.GetMovementVector(playerA);
+        if(!busy) myRB.velocity = new Vector3(move.x, 0f, move.y) * speed;
 
             //Check for valid interactions
         nearest = Interactable.GetNearest(this);
@@ -47,23 +49,55 @@ public class Player : MonoBehaviour
         if (MyInput.SelectPressed(playerA)) {
             if (nearest != null) nearest.OnInteract(this);
         }
+
+            //Check for interaction button held
+        if (MyInput.SelectHeld(playerA)) {
+            if (nearest != null) nearest.OnInteractHeld(this);
+        }
+
+            //Check for interaction button up
+        if (MyInput.SelectReleased(playerA)) {
+            if (nearest != null) nearest.OnInteractReleased(this);
+        }
     }
 
 
 
     //basic picking up and throwing away behaviors
 
-    public void Pickup(Ingredient ingredient) {
-        if (held_a.isEmpty) held_a.Set(ingredient);
-        else if (held_b.isEmpty) held_b.Set(ingredient);
+    public bool Pickup(Ingredient ingredient) {
+        if (held_salad != null) return false;
+        if (held_a.isEmpty) {
+            held_a.Set(ingredient);
+            return true;
+        }
+        else if (held_b.isEmpty) {
+            held_b.Set(ingredient);
+            return true;
+        }
+        return false;
+    }
+
+    public bool Pickup(Salad s) {
+        if (held_a.isEmpty && held_b.isEmpty && held_salad == null) {
+            held_salad = s;
+            s.SetNewRoot(sr_held_a.gameObject);
+            return true;
+        }
+        return false;
     }
 
     public void ThrowAway() {
         Place();
+        Salad s = PlaceSalad();
+        if (s != null) s.Flush();
+        held_salad = null;
     }
+
         //Place() acts like discarding if return value is ignored
     public Ingredient Place() {
         Ingredient i = null;
+
         if (!held_b.isEmpty) {
             i = held_b.held_ingredient;
             held_b.Clear();
@@ -73,6 +107,14 @@ public class Player : MonoBehaviour
             held_a.Clear();
         }
         return i;
+    }
+
+    public Salad PlaceSalad() {
+        if (held_salad != null) {
+            Salad s = held_salad;
+            return s;
+        }
+        else return null;
     }
 
     //

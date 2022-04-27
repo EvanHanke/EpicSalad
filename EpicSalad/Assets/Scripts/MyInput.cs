@@ -44,4 +44,16 @@ public static class MyInput
         KeyCode[] keys = (playerA) ? keyCodes_a : keyCodes_b;
         return (Input.GetKeyDown(keys[4]));
     }
+
+    //when the key is held
+    public static bool SelectHeld(bool playerA) {
+        KeyCode[] keys = (playerA) ? keyCodes_a : keyCodes_b;
+        return (Input.GetKey(keys[4]));
+    }
+
+    //when released
+    public static bool SelectReleased(bool playerA) {
+        KeyCode[] keys = (playerA) ? keyCodes_a : keyCodes_b;
+        return (Input.GetKeyUp(keys[4]));
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ingredient : Interactable
 {
     public SpriteRenderer sr;
+    public Color color; //color that the particles in the salad appear 
 
     protected void Awake() {
         sr = GetComponent<SpriteRenderer>();
