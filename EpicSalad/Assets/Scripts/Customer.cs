@@ -74,7 +74,7 @@ public class Customer:MonoBehaviour
     }
 
     public void Satisfy(Salad s) {
-        if(timer >= timer_max * 0.7f) {
+        if(timer >= timer_max * 0.6f) {
             PickupHelper.me.Spawn(s.player);
         }
         s.player.AddScore(my_order.Length * 10);

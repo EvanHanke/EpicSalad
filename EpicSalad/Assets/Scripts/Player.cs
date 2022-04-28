@@ -52,9 +52,16 @@ public class Player : MonoBehaviour
     }
 
     private void Update() {
+        if (time == -100f) return;//when score menu is shown
+
         time -= Time.deltaTime;
         if (time < 0f) time = 0f; 
         myUI.SetTimer(time);
+
+        if((playerA.time == 0f && playerB.time == 0f )|| Input.GetKeyDown(KeyCode.Escape)) {
+            GameManager.me.ShowScore();
+            time = -100f;
+        }
 
         if (speed_timer > 0f) speed_timer -= Time.deltaTime;
 
@@ -144,4 +151,11 @@ public class Player : MonoBehaviour
     }
 
     //
+    //reset player
+    public void Clear() {
+        held_b.Clear();
+        held_a.Clear();
+        score = 0;
+        time = 120f;
+    }
 }

@@ -60,6 +60,7 @@
     <Compile Include="Assets/Scripts/Customer.cs" />
     <Compile Include="Assets/Scripts/CustomerController.cs" />
     <Compile Include="Assets/Scripts/CuttingBoard.cs" />
+    <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/HeldItem.cs" />
     <Compile Include="Assets/Scripts/HighScoreUI.cs" />
     <Compile Include="Assets/Scripts/Ingredient.cs" />

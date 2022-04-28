@@ -37,6 +37,7 @@ public class HeldItem
     public void Clear() {
         sr.sprite = null;
         held_ingredient = null;
+        if (held_salad != null) held_salad.Flush();
         held_salad = null;
     }
 

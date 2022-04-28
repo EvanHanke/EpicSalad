@@ -24,6 +24,12 @@ public class CustomerController : MonoBehaviour
         }
     }
 
+    public void RemoveAllCustomers() {
+        foreach(Customer c in GetComponentsInChildren<Customer>()) {
+            c.RemoveMe();
+        }
+    }
+
     public Customer SpawnCustomer() {
         Plate p = GetNextPlate();
 
@@ -48,7 +54,6 @@ public class CustomerController : MonoBehaviour
 
     public void Start() {
         customers = new List<Customer>();
-        SpawnCustomer();
     }
 
     //Get an UNUSED random plate
