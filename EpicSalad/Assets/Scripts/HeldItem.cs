@@ -28,7 +28,7 @@ public class HeldItem
     }
 
     public void Set(Salad s) {
-        if(s != null) {
+        if(s != null && held_salad == null) {
             held_salad = s;
             s.SetNewRoot(sr.gameObject);
         }
@@ -40,6 +40,10 @@ public class HeldItem
         held_salad = null;
     }
 
+    public void ClearIng() {
+        sr.sprite = null;
+        held_ingredient = null;
+    }
     //adds the held item to the salad slot
     public void AddHeldToSalad() {
         if (held_ingredient == null) return;

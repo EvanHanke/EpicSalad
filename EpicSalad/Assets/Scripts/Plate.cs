@@ -6,8 +6,13 @@ using UnityEngine;
 
 public class Plate : Interactable
 {
+    public bool free = true; // is a customer waiting at this plate?
+
     public HeldItem placed;
     public bool allow_ingredients = true;
+
+    public delegate void OnCheck(Salad s);
+    public OnCheck checkSalad;
 
     //Create a buffer object to hold the sprite of the item on the plate
     void Awake()
@@ -26,6 +31,10 @@ public class Plate : Interactable
 
         Ingredient ing = p.Place();
         if (ing != null) {//put an ingredient down
+            
+            if(placed.held_ingredient != null) {
+                p.Pickup(placed.held_ingredient);
+            }
             placed.Set(ing);
         }
         else if (!placed.isEmpty) { //pick a salad or ingredient up
@@ -44,8 +53,17 @@ public class Plate : Interactable
             if (s != null) {
                 placed.Set(p.PlaceSalad());
                 p.held_salad = null;
+
+                if (checkSalad != null) checkSalad(s); //trigger customer callback
             }
         }
 
+    }
+
+    public void ClearSalad() {
+        if(placed.held_salad != null) {
+            placed.held_salad.Flush();
+            placed.held_salad = null;
+        }
     }
 }

@@ -1,31 +1,42 @@
 ﻿<Properties StartupConfiguration="{1F068FB2-6AC9-8E57-DA67-E93BCDFE6AC7}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Customer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HighScoreUI.cs">
     <Files>
       <File FileName="Assets/Scripts/MyInput.cs" Line="57" Column="42" />
-      <File FileName="Assets/Scripts/Interactable.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/Player.cs" Line="94" Column="27" />
-      <File FileName="Assets/Scripts/CuttingBoard.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/Plate.cs" Line="24" Column="36" />
-      <File FileName="Assets/Scripts/HeldItem.cs" Line="48" Column="50" />
-      <File FileName="Assets/Scripts/Salad.cs" Line="15" Column="32" />
-      <File FileName="Assets/Scripts/ChargeBar.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/Ingredient.cs" Line="16" Column="35" />
-      <File FileName="Assets/Scripts/Trashcan.cs" Line="8" Column="23" />
-      <File FileName="Assets/UI/UIHelper.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/CustomerController.cs" Line="27" Column="21" />
-      <File FileName="Assets/Scripts/Customer.cs" Line="7" Column="30" />
+      <File FileName="Assets/Scripts/Interactable.cs" />
+      <File FileName="Assets/Scripts/Player.cs" Line="62" Column="46" />
+      <File FileName="Assets/Scripts/CuttingBoard.cs" />
+      <File FileName="Assets/Scripts/Plate.cs" />
+      <File FileName="Assets/Scripts/HeldItem.cs" />
+      <File FileName="Assets/Scripts/Salad.cs" />
+      <File FileName="Assets/Scripts/ChargeBar.cs" />
+      <File FileName="Assets/Scripts/Ingredient.cs" />
+      <File FileName="Assets/Scripts/Trashcan.cs" />
+      <File FileName="Assets/UI/UIHelper.cs" />
+      <File FileName="Assets/Scripts/CustomerController.cs" Line="61" Column="29" />
+      <File FileName="Assets/Scripts/Customer.cs" Line="78" Column="1" />
+      <File FileName="Assets/UI/ScoreBar.cs" Line="8" Column="17" />
+      <File FileName="Assets/Scripts/Pickup.cs" Line="10" Column="49" />
+      <File FileName="Assets/Scripts/PickupHelper.cs" Line="12" Column="19" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="16" Column="34" />
+      <File FileName="Assets/Scripts/HighScoreUI.cs" Line="12" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="EpicSalad" expanded="True" selected="True" />
+          <Node name="EpicSalad" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="HighScoreUI.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="731cca6a-1fa9-4fbc-97d5-3a3361083172" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9e1473cf-44bc-47c6-9d15-a3a6d3141c93" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,6 +8,8 @@ public class Salad
     public List<SaladPart> saladParts;
     public GameObject prefab_root; //holds for the particle objects
 
+    public Player player; //player who last touched this salad
+
     public Salad() {
         saladParts = new List<SaladPart>();
         prefab_root = new GameObject();

@@ -61,13 +61,18 @@
     <Compile Include="Assets/Scripts/CustomerController.cs" />
     <Compile Include="Assets/Scripts/CuttingBoard.cs" />
     <Compile Include="Assets/Scripts/HeldItem.cs" />
+    <Compile Include="Assets/Scripts/HighScoreUI.cs" />
     <Compile Include="Assets/Scripts/Ingredient.cs" />
     <Compile Include="Assets/Scripts/Interactable.cs" />
+    <Compile Include="Assets/Scripts/MainMenu.cs" />
     <Compile Include="Assets/Scripts/MyInput.cs" />
+    <Compile Include="Assets/Scripts/Pickup.cs" />
+    <Compile Include="Assets/Scripts/PickupHelper.cs" />
     <Compile Include="Assets/Scripts/Plate.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
     <Compile Include="Assets/Scripts/Salad.cs" />
     <Compile Include="Assets/Scripts/Trashcan.cs" />
+    <Compile Include="Assets/UI/ScoreBar.cs" />
     <Compile Include="Assets/UI/UIHelper.cs" />
   </ItemGroup>
   <ItemGroup>

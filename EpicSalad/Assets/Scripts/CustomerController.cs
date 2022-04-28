@@ -4,25 +4,67 @@ using UnityEngine;
 
 public class CustomerController : MonoBehaviour
 {
+    public static CustomerController me;
     public GameObject customer_prefab;
     public Sprite c_neutral, c_angry, c_happy;
     public Plate[] customer_plates;
+    int plate_counter = 0;
+
+    public List<Customer> customers;
+
+    public static float customer_interval = 10f;
+    public static float ingredient_time = 15f;
+    float timer = 0f;
+
+    private void Update() {
+        timer += Time.deltaTime;
+        if(timer >= customer_interval) {
+            SpawnCustomer();
+            timer = 0f;
+        }
+    }
 
     public Customer SpawnCustomer() {
-        GameObject g = GameObject.Instantiate(customer_prefab);
-        g.transform.SetParent(transform);
+        Plate p = GetNextPlate();
 
-        int plate = (int)(Random.value * customer_plates.Length);
-        Plate p = customer_plates[plate];
-        g.transform.position = p.transform.position + Vector3.forward * 2f;
+        if (p != null) {
+            GameObject g = GameObject.Instantiate(customer_prefab);
+            g.transform.SetParent(transform);
 
-        Customer c = g.GetComponent<Customer>();
-        c.Set(p, GetRandomOrder());
-        return c;
+            g.transform.position = p.transform.position + Vector3.forward * 2f;
+
+            Customer c = g.GetComponent<Customer>();
+            c.Set(p, GetRandomOrder());
+            customers.Add(c);
+
+            return c;
+        }
+        return null;
+    }
+
+    private void Awake() {
+        me = this;
     }
 
     public void Start() {
+        customers = new List<Customer>();
         SpawnCustomer();
+    }
+
+    //Get an UNUSED random plate
+    public Plate GetNextPlate() {
+        int safety = 0;
+
+        while (!customer_plates[plate_counter].free) {
+
+            if (plate_counter >= customer_plates.Length-1) plate_counter = 0;
+            plate_counter++;
+
+            safety++;
+            if (safety > 2) return null;
+        }
+        return customer_plates[plate_counter];
+
     }
 
     //get 2-3 random ingredients and pass them back in an array

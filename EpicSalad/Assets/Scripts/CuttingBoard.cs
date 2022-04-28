@@ -80,7 +80,7 @@ public class CuttingBoard : Interactable
         if(cb != null) {
             RemoveBar();
             p.Pickup(placed.held_ingredient);
-            placed.Clear();
+            placed.ClearIng();
         }
             
     }

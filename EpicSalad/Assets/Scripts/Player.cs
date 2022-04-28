@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player playerA, playerB;
+    public ScoreBar myUI; //score / timer ui
+    public int score = 0;
+    public float time = 120f;
+
         //minimum distance to pick up items etc
     public static float interact_distance = 4f; 
 
         //movement controls
-    public bool playerA;
+    public bool isplayerA;
     public Rigidbody myRB;
     public float speed = 8f;
+    public float speed_timer = 0f;
+    public float speed_mod = 1.4f;
 
         //the spriterenderers which correspond to the currently held items
     public SpriteRenderer sr_held_a;
@@ -34,31 +41,48 @@ public class Player : MonoBehaviour
 
         held_a = new HeldItem(sr_held_a);
         held_b = new HeldItem(sr_held_b);
+
+        if (isplayerA) playerA = this;
+        else playerB = this;
+    }
+
+    public void AddScore(int s) {
+        score += s;
+        myUI.SetScore(s);
     }
 
     private void Update() {
+        time -= Time.deltaTime;
+        if (time < 0f) time = 0f; 
+        myUI.SetTimer(time);
 
+        if (speed_timer > 0f) speed_timer -= Time.deltaTime;
+
+        if(time > 0f) {
             //read in keyboard movement input
-        Vector2 move = MyInput.GetMovementVector(playerA);
-        if(!busy) myRB.velocity = new Vector3(move.x, 0f, move.y) * speed;
+            Vector2 move = MyInput.GetMovementVector(isplayerA);
+            float m = (speed_timer > 0f) ? speed_mod : 1f;
+            if (!busy) myRB.velocity = new Vector3(move.x, 0f, move.y) * speed * m;
 
             //Check for valid interactions
-        nearest = Interactable.GetNearest(this);
+            nearest = Interactable.GetNearest(this);
 
             //Check for interaction button pressed
-        if (MyInput.SelectPressed(playerA)) {
-            if (nearest != null) nearest.OnInteract(this);
-        }
+            if (MyInput.SelectPressed(isplayerA)) {
+                if (nearest != null) nearest.OnInteract(this);
+            }
 
             //Check for interaction button held
-        if (MyInput.SelectHeld(playerA)) {
-            if (nearest != null) nearest.OnInteractHeld(this);
-        }
+            if (MyInput.SelectHeld(isplayerA)) {
+                if (nearest != null) nearest.OnInteractHeld(this);
+            }
 
             //Check for interaction button up
-        if (MyInput.SelectReleased(playerA)) {
-            if (nearest != null) nearest.OnInteractReleased(this);
+            if (MyInput.SelectReleased(isplayerA)) {
+                if (nearest != null) nearest.OnInteractReleased(this);
+            }
         }
+
     }
 
 
@@ -82,6 +106,7 @@ public class Player : MonoBehaviour
         if (held_a.isEmpty && held_b.isEmpty && held_salad == null) {
             held_salad = s;
             s.SetNewRoot(sr_held_a.gameObject);
+            s.player = this;
             return true;
         }
         return false;
@@ -92,6 +117,7 @@ public class Player : MonoBehaviour
         Salad s = PlaceSalad();
         if (s != null) s.Flush();
         held_salad = null;
+        AddScore(-5);
     }
 
         //Place() acts like discarding if return value is ignored
