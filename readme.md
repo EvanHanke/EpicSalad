@@ -5,3 +5,16 @@ EPIC SALAD GAME DEMO
 Apr 24, 2022
 Evan Hanke
 </h2>
+
+
+Controls: 
+P1
+WASD
+Shift
+
+P2
+Arrow Keys
+Enter
+
+Create salads for customers to win!
+Find powerups when you make a salad fast!
